@@ -2,42 +2,14 @@
 
 namespace Model;
 
+use Inc\MsqlAbstract;
+
 /**
  * Class Mysql
  * @package Model
  */
-class Mysql
+class Mysql extends MsqlAbstract
 {
-    /**
-     * @var null
-     */
-    public $connectionString;
-    /**
-     * @var null
-     */
-    public $dataSet;
-
-    /**
-     * @var null
-     */
-    private $sqlQuery;
-
-    /**
-     * @var string
-     */
-    protected $hostName;
-    /**
-     * @var string
-     */
-    protected $userName;
-    /**
-     * @var string
-     */
-    protected $password;
-    /**
-     * @var string
-     */
-    protected $databaseName;
 
     /**
      * Mysql constructor.

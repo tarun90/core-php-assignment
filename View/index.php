@@ -1,5 +1,5 @@
 <!-- Content Start-->
-<section class="content-calendar">
+<section class="content">
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
@@ -7,7 +7,7 @@
                     excel file.Directly past in excel file
                 </button>
 
-                <div class="alert alert-success" role="alert"></div>
+                <div class="alert alert-success alert-show" role="alert"></div>
 
                 <table class="table table-striped table-hover" id="ownerId">
                     <thead class="thead-dark">

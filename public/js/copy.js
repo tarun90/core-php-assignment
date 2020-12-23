@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    $('.alert').hide();
+    $('.alert-show').hide();
 
     function copytable(el) {
         const urlField = document.getElementById(el);
@@ -15,6 +15,6 @@
     $(document).on('click', '#excel_csv', function (e) {
         copytable('ownerId');
 
-        $('.alert').show().html('Table data copy to clipboard')
+        $('.alert-show').show().html('Table data copy to clipboard')
     });
 })();

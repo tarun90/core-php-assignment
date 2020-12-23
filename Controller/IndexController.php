@@ -29,17 +29,27 @@ class IndexController extends BaseController
      */
     public function index()
     {
-        $owners = $this->owner->getOwners();
+        try {
+            $owners = $this->owner->getOwners();
 
-        $data = array(
-            'owners' => $owners,
-            'owners_count' => $owners->num_rows
-        );
+            $data = array(
+                'owners' => $owners,
+                'owners_count' => $owners->num_rows
+            );
 
-        $this->loadView('layout/header', []);
+            $this->loadView('layout/header', []);
+            $this->loadView('index', $data);
+            $this->loadView('layout/footer', []);
 
-        $this->loadView('index', $data);
+        } catch (\Exception $e) {
+            $data = array(
+                'errors' => $e,
+                'error_message' => $e->getMessage()
+            );
 
-        $this->loadView('layout/footer', []);
+            $this->loadView('layout/header', []);
+            $this->loadView('error', $data);
+            $this->loadView('layout/footer', []);
+        }
     }
 }
