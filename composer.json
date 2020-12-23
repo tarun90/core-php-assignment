@@ -4,11 +4,16 @@
   "minimum-stability": "stable",
   "autoload": {
     "psr-4": {
-      "controllers\\": "controllers/",
-      "core\\": "core/"
+      "Controller\\": "Controller/",
+      "Core\\": "Core/",
+      "Model\\": "Model/",
+      "Inc\\": "Inc/"
     },
     "files": [
-      "core/config.php"
+      "Core/Config.php"
     ]
+  },
+  "require": {
+    "ext-mysqli": "*"
   }
 }

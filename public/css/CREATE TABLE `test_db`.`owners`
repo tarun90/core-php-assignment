@@ -1,0 +1,13 @@
+CREATE TABLE `test_db`.`owners` 
+( 
+	`id` INT NOT NULL ,  
+	`owner` CHAR(40) NOT NULL ,  
+	`date` DATE NOT NULL ,  
+	`v1` DOUBLE(10,4) NOT NULL DEFAULT '0.0000' ,  
+	`v2` DOUBLE(10,4) NOT NULL DEFAULT '0.0000' ,    
+	PRIMARY KEY  (`id`),    
+	INDEX  (`v1`),    
+	INDEX  (`v2`),   
+	INDEX  (`date`),   
+	INDEX  (`owner`)
+);

@@ -5,7 +5,7 @@
  **/
 require_once "vendor/autoload.php";
 
-use controllers\IndexController;
+use Controller\IndexController;
 
 $obj = new IndexController();
 $obj->index();

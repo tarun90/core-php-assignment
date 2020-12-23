@@ -1,12 +1,14 @@
 <?php
 
-namespace core;
+namespace Core;
+
+use Inc\ViewInterface;
 
 /**
  * Class BaseController
- * @package core
+ * @package Core
  */
-class BaseController
+class BaseController implements ViewInterface
 {
     /**
      * @param $params
@@ -14,12 +16,12 @@ class BaseController
      */
     public function loadView($params, $data = array())
     {
-        if (file_exists(SITE_PATH . 'views/' . $params . ".php")) {
+        if (file_exists(SITE_PATH . 'View/' . $params . ".php")) {
             if (!empty($data)) {
                 extract($data);
             }
 
-            include(SITE_PATH . 'views/' . $params . ".php");
+            include(SITE_PATH . 'View/' . $params . ".php");
         }
     }
 }

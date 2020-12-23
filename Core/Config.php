@@ -38,3 +38,24 @@ define('SITE_PATH', $_SERVER["DOCUMENT_ROOT"] . '/' . SITE_SLUG . '/');
  * Assign assets path
  */
 define('ASSETS_URL', SITE_URL . 'public/');
+
+/* Database connection */
+/**
+ * Mysql Database Host
+ */
+define('DB_HOST', 'localhost');
+
+/**
+ * Mysql Database Username
+ */
+define('DB_USERNAME', 'root');
+
+/**
+ * Mysql Database Password
+ */
+define('DB_PASSWORD', 'elsneradmin');
+
+/**
+ * Mysql Database Name
+ */
+define('DB_NAME', 'test_db');
