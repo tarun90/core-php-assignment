@@ -6,6 +6,9 @@
     "psr-4": {
       "controllers\\": "controllers/",
       "core\\": "core/"
-    }
+    },
+    "files": [
+      "core/config.php"
+    ]
   }
 }

@@ -23,10 +23,10 @@ class IndexController extends BaseController
      */
     public function index()
     {
-        echo "hi";
-        exit();
-        $this->loadView('header');
-        $this->loadView('index');
-        $this->loadView('footer');
+        $this->loadView('layout/header', []);
+
+        $this->loadView('index', []);
+
+        $this->loadView('layout/footer', []);
     }
 }

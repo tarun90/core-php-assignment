@@ -20,14 +20,19 @@ if ($error_display) {
 define('SITE_NAME', 'Core PHP Assignment');
 
 /**
+ * Assign site slug
+ */
+define('SITE_SLUG', 'core-php-assignment');
+
+/**
  * Assign site url
  */
-define('SITE_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/' . SITE_NAME . '/');
+define('SITE_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/' . SITE_SLUG . '/');
 
 /**
  * Assign site path
  */
-define('SITE_PATH', $_SERVER["DOCUMENT_ROOT"] . '/' . SITE_NAME . '/');
+define('SITE_PATH', $_SERVER["DOCUMENT_ROOT"] . '/' . SITE_SLUG . '/');
 
 /**
  * Assign assets path

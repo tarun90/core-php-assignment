@@ -10,17 +10,18 @@
     <title><?php echo SITE_NAME; ?></title>
     <!--CSS -->
     <link rel="stylesheet" type="text/css" href="<?php echo ASSETS_URL; ?>css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo ASSETS_URL; ?>css/style.css">
 </head>
 
 <body>
-    <div class="wrapper">
-        <!-- Header Start -->
-        <header class="header-title">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3 class="center-block text-uppercase"><b><u><?php echo SITE_NAME; ?></u></b></h3>
-                </div>
+<div class="wrapper">
+    <!-- Header Start -->
+    <header class="header-title">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="center-block text-uppercase"><b><u><?php echo SITE_NAME; ?></u></b></h3>
             </div>
-        </header>
-        <!-- Header End -->
-        <br>
+        </div>
+    </header>
+    <!-- Header End -->
+    <br>
