@@ -15,6 +15,7 @@
 <!--JS -->
 <script type="text/javascript" src="<?php echo ASSETS_URL; ?>js/jquery.min.js"></script>
 <script type="text/javascript" src="<?php echo ASSETS_URL; ?>js/bootstrap.min.js"></script>
+<script type="text/javascript" src="<?php echo ASSETS_URL; ?>js/copy.js"></script>
 </body>
 
 </html>

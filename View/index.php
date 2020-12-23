@@ -3,9 +3,13 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <button type="button" class="btn btn-secondary mb-2">HTML table can be pasted directly into Excel using</button>
+                <button type="button" id="excel_csv" class="btn btn-secondary mb-5 float-right">CTRL+V copy table to
+                    excel file.Directly past in excel file
+                </button>
 
-                <table class="table table-striped table-hover">
+                <div class="alert alert-success" role="alert"></div>
+
+                <table class="table table-striped table-hover" id="ownerId">
                     <thead class="thead-dark">
                     <tr>
                         <th scope="col">#</th>
